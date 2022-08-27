@@ -1,0 +1,43 @@
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label for="disabledTextInput">Id</label>
+        <input type="number" class="form-control" placeholder="Id" formControlName="id">
+    </div>
+
+    <div class="form-group">
+        <label for="disabledSelect">Tipo Identificación</label>
+        <select class="form-control" formControlName="typeIdentification">
+            <option>CC</option>
+            <option>CE</option>
+            <option>NIT</option>
+            <option>PASAPORTE</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="disabledTextInput">Identificación</label>
+        <input type="text" class="form-control" placeholder="Identificación" formControlName="identification" >
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput">Nombre o razón Social</label>
+        <input type="text" class="form-control" placeholder="Nombre o razón Social" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput">Ciudad</label>
+        <input type="text"  class="form-control" placeholder="Ciudad" formControlName="city">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput">Dirección</label>
+        <input type="text" class="form-control" placeholder="Dirección" formControlName="address">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput">Teléfono</label>
+        <input type="text"  class="form-control" placeholder="Teléfono" formControlName="phone">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+
+  <router-outlet></router-outlet>
